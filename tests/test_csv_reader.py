@@ -1,5 +1,5 @@
 import pytest
-from birthday_project.csv_reader import read_csv_rows
+from team_5_birthday_project.csv_reader import read_csv_rows
 
 
 def test_read_csv_normal(tmp_path):
