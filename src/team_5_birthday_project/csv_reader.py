@@ -1,6 +1,5 @@
 import csv
 
-
 REQUIRED_COLUMNS = ["id", "name", "datum"]
 
 

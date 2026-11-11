@@ -1,5 +1,7 @@
 from datetime import date
+
 import pytest
+
 from team_5_birthday_project.people import load_people
 
 

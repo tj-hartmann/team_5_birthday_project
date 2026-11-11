@@ -1,5 +1,7 @@
 from datetime import date
+
 import pytest
+
 from team_5_birthday_project.dates import parse_date
 
 
