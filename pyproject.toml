@@ -1,3 +1,4 @@
+
 [project]
 name = "team-5-birthday-project"
 version = "0.1.0"
@@ -6,8 +7,11 @@ readme = "README.md"
 authors = [
     { name = "ToJo", email = "tobihartmann03@gmail.com" }
 ]
-requires-python = ">=3.13"
-dependencies = [
+requires-python = ">=3.12"
+dependencies = []
+
+[dependency-groups]
+dev = [
     "pytest>=9.2.0",
     "ruff>=0.17.4",
 ]
@@ -18,3 +22,7 @@ team-5-birthday-project = "team_5_birthday_project:main"
 [build-system]
 requires = ["uv_build>=0.13.4,<0.14.0"]
 build-backend = "uv_build"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
