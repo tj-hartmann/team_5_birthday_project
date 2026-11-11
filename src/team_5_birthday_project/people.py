@@ -1,5 +1,5 @@
-from src.team_5_birthday_project.csv_reader import read_csv_rows
-from src.team_5_birthday_project.dates import parse_date
+from team_5_birthday_project.csv_reader import read_csv_rows
+from team_5_birthday_project.dates import parse_date
 
 
 def load_people(path: str) -> list[dict]:
