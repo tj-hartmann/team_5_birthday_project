@@ -7,7 +7,10 @@ authors = [
     { name = "ToJo", email = "tobihartmann03@gmail.com" }
 ]
 requires-python = ">=3.13"
-dependencies = []
+dependencies = [
+    "pytest>=9.2.0",
+    "ruff>=0.17.4",
+]
 
 [project.scripts]
 team-5-birthday-project = "team_5_birthday_project:main"
