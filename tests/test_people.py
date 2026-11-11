@@ -4,7 +4,7 @@ import pytest
 
 from team_5_birthday_project.people import load_people
 
-'''
+"""
 def test_load_people_valid(tmp_path):
     f = tmp_path / "people.csv"
     f.write_text(
@@ -25,7 +25,8 @@ def test_load_people_valid(tmp_path):
     }
     assert people[1]["id"] == 1002
     assert people[2]["birthdate"] == date(2004, 9, 14)
-'''
+"""
+
 
 def test_load_empty_csv(tmp_path):
     f = tmp_path / "empty.csv"
@@ -33,7 +34,8 @@ def test_load_empty_csv(tmp_path):
 
     assert load_people(str(f)) == []
 
-'''
+
+"""
 def test_load_people_whitespace_and_same_names(tmp_path):
     f = tmp_path / "spaces.csv"
     f.write_text(
@@ -47,7 +49,8 @@ def test_load_people_whitespace_and_same_names(tmp_path):
     assert len(people) == 2
     assert people[0]["name"] == "Anna Keller"
     assert people[1]["name"] == "Anna Keller"
-'''
+"""
+
 
 def test_duplicate_id_fails(tmp_path):
     f = tmp_path / "dup.csv"
