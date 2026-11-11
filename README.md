@@ -3,5 +3,5 @@ project to learn team workflow
 
 Product Owner/Integration: tj-hartmann
 Test Team: tangyi434
-Software Development: vincetgrueneklee + serox1
+Software Development: vincetgrueneklee + serox1910
 Revision/Review: Marvin-T-S
