@@ -22,3 +22,28 @@ def find_age_neighbors(people, n=10):
         result[person["id"]] = ids
 
     return result
+
+def find_birthday_groups(people):
+
+    gruppen = {}
+
+
+    for person in people:
+        monat = person["birthdate"].month
+        tag = person["birthdate"].day
+        schluessel = (monat, tag)
+
+        if schluessel not in gruppen:
+            gruppen[schluessel] = []
+        gruppen[schluessel].append(person["id"])
+        
+    result = {}
+
+
+    for schluessel in gruppen:
+        if len(gruppen[schluessel]) > 1:
+            gruppen[schluessel].sort()
+            result[schluessel] = gruppen[schluessel]
+
+    return result
+
