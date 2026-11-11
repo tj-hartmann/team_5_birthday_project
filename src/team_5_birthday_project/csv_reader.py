@@ -12,8 +12,7 @@ def read_csv_rows(path: str) -> list[dict[str, str]]:
 
         if reader.fieldnames != REQUIRED_COLUMNS:
             raise ValueError(
-                "CSV must contain exactly these columns: "
-                + ", ".join(REQUIRED_COLUMNS)
+                "CSV must contain exactly these columns: " + ", ".join(REQUIRED_COLUMNS)
             )
 
         for row in reader:
@@ -26,7 +25,3 @@ def read_csv_rows(path: str) -> list[dict[str, str]]:
             )
 
     return rows
-
-
-
-

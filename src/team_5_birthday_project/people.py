@@ -15,5 +15,3 @@ def load_people(path: str) -> list[dict]:
         )
 
     return people
-
-
