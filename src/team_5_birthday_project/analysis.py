@@ -41,7 +41,7 @@ def find_birthday_groups(people):
 
     for schluessel, value in gruppen.items():
         if len(value) > 1:
-            gruppen[schluessel].sort()
-            result[schluessel] = gruppen[schluessel]
+            value.sort()
+            result[schluessel] = value
 
     return result
